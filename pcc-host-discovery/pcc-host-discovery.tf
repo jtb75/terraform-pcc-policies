@@ -29,13 +29,7 @@ resource "aws_iam_policy" "policy" {
             "Effect": "Allow",
             "Action": [
                 "ec2:DescribeInstances",
-                "ssm:CreateAssociation",
-                "ec2:DescribeImages",
-                "ssm:SendCommand",
-                "ssm:DescribeInstanceInformation",
-                "ssm:ListCommandInvocations",
-                "ssm:CancelCommand"
-
+                "ssm:CreateAssociation"
             ],
             "Resource": "*"
         }
@@ -44,4 +38,10 @@ resource "aws_iam_policy" "policy" {
 
 EOT
 }
-
+/*
+                "ec2:DescribeImages",
+                "ssm:SendCommand",
+                "ssm:DescribeInstanceInformation",
+                "ssm:ListCommandInvocations",
+                "ssm:CancelCommand"
+*/
